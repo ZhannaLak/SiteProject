@@ -1,6 +1,164 @@
-h1{
-color:red;
+header{
+	/* header */
+
+position: absolute;
+width: 1920px;
+height: 147px;
+left: 0px;
+top: 0px;
+background: #e9e9ed;
 }
-body{
-background:green;
+.logo{
+	/* logo */
+
+position: absolute;
+width: 202px;
+height: 147px;
+left: 293px;
+top: 0px;
+}
+.nav{
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 50px;
+
+position: absolute;
+width: 457px;
+height: 25px;
+left: calc(50% - 457px/2 + 0.5px);
+top: 61px;
+}
+
+
+.event{
+
+width: 127px;
+height: 25px;
+]
+/* Desk. Типографика Cайт 1/Ссылки. Навигация/Новигация/Навигация header */
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 25px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Сайт 1 Цвета/Осн. цвета/Черный */
+color: #1F1E1E;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+/* Блог */
+.blog{
+width: 42px;
+height: 25px;
+
+/* Desk. Типографика Cайт 1/Ссылки. Навигация/Новигация/Навигация header */
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 25px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Сайт 1 Цвета/Осн. цвета/Черный */
+color: #1F1E1E;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+/* О нас */
+.o-nas{
+width: 50px;
+height: 25px;
+
+/* Desk. Типографика Cайт 1/Ссылки. Навигация/Новигация/Навигация header */
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 25px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Сайт 1 Цвета/Осн. цвета/Черный */
+color: #1F1E1E;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+}
+
+/* Контакты */
+.kontakt{
+
+width: 88px;
+height: 25px;
+
+/* Desk. Типографика Cайт 1/Ссылки. Навигация/Новигация/Навигация header */
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 25px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Сайт 1 Цвета/Осн. цвета/Черный */
+color: #1F1E1E;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+}
+/* войти */
+.voiti{
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 15px 40px;
+gap: 10px;
+
+position: absolute;
+width: 131px;
+height: 52px;
+right: 293px;
+top: 46px;
+
+/* Сайт 1 Цвета/Осн. цвета/Черный */
+border: 1px solid #1F1E1E;
+}
+.voiti:hover{
+	color:red;
 }
