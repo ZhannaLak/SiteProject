@@ -1,29 +1,50 @@
-<!DOCTYPE html>  <!-- Указывайте Doctype -->
-<html lang="ru">  <!-- Указывайте язык документа -->
+<!DOCTYPE html> <!-- Указывайте Doctype -->
+<html lang="ru"> <!-- Указывайте язык документа -->
 
-  <head>  <!-- Визуально отделяйте вложенные элементы двойным пробелом -->
-    <meta charset="UTF-8" />  <!-- Указывайте кодировку -->
-    <title>SiteProjectZhanna</title> <!-- Задавайте заголовок -->
+<head> <!-- Визуально отделяйте вложенные элементы двойным пробелом -->
+	<meta charset="UTF-8" /> <!-- Указывайте кодировку -->
+	<title>SiteProjectZhanna</title> <!-- Задавайте заголовок -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+		rel="stylesheet">
 	<link rel="stylesheet" href="styles/styles.css">
-  </head>
-  <header> <!-- шапка -->
-	<img class="logo" src="resource/logo.svg"/>
-	<div class="nav">
-	<div class="event"> Мероприятие </div>
-	<div class="blog"> Блог </div>
-	<div class="o-nas"> О нас </div>
-	<div class="kontakt"> Контакты </div>
-	</div>
-	<button class="voiti"> Войти </button>
-  </header>
-  <body>
- <div/> <!-- цитата -->
- <div/> <!-- кнопки -->
- <div/> <!-- о нас -->
- <div/> <!-- текстовый блок -->
-  <div/> <!-- контакты -->
-  </body>
-  <footer>
+</head>
+<header class="page-header"> <!-- шапка -->
+	<div class="page-header__container">
+		<a href="#" class="page-header__logo">
+			<img class="logo" src="resource/logo.svg" alt="logo">
+		</a>
 
-  </footer>
+		<nav class="page-header__nav">
+			<a href="#" class="page-header__nav-link">Мероприятия</a>
+			<a href="#" class="page-header__nav-link">Блог</a>
+			<a href="#" class="page-header__nav-link">О нас</a>
+			<a href="#" class="page-header__nav-link">Контакты</a>
+			<!-- <div class="page-header__nav-user">
+				<a href="#" class="page-header__nav-user-link">Александр С.</a>
+			</div> -->
+
+		</nav>
+
+		<div class="page-header__right-block">
+			<a href="#" class="page-header__user-btn btn">Войти</a>
+			<button type="button" class="page-header__nav-toggle" id="js-vanToggle">
+			</button>
+		</div>
+
+	</div>
+</header>
+
+
+
+<body>
+
+</body>
+
+
+
+<footer>
+</footer>
+
 </html>
