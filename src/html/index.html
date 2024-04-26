@@ -1,11 +1,16 @@
 <!DOCTYPE html> <!-- Указывайте Doctype -->
 <html lang="ru"> <!-- Указывайте язык документа -->
 
-  @@include('blocks/head.html')
+@@include('blocks/head.html')
 
+
+
+<svg class="imgLenni" width="100%" height="375">
+	<use xlink:href="assets/icons/symbols.svg#LENNI"></use>
+</svg>
 <body class="body">
-   @@include('blocks/page-header.html')
-	<img class="imgLenni" src="LENNI.jpg">
+	@@include('blocks/page-header.html')
+
 	<main class="main">
 		<header class="main-header hom__main-header">
 			<span>Арт — Пространство</span>
@@ -19,12 +24,12 @@
 			<button class="iwant_buttonright"> Стать арендатором </button>
 		</div>
 
-			  @@include('blocks/about.html')
+		@@include('blocks/about.html')
 
 
 		<section class="section5">
 			<div class="body">
-  			  @@include('blocks/events.html')
+				@@include('blocks/events.html')
 			</div>
 		</section>
 
@@ -32,12 +37,91 @@
 
 			<section class "about">
 				<div class="about__container">
-					<h4 class=" section-title" >блог</h4>
+					<h4 class=" section-title">блог</h4>
 				</div>
 			</section>
 			<!-- Блог. 3 карточки статьи блога-->
-			@@include('blocks/news-card.html')
-			
+
+			<article class="news-card listing__news-card">
+				<a href="#" class="news-card__link">
+					<picture class="news-card__picture">
+						<img src="assets/images/newspic_1.jpg" alt="фотосессия" class="news-card__img" />
+					</picture>
+					<div class="news-card_div">
+						<div class="news-card_textdiv">
+							<span class="news-card__date">
+								26.11.2022
+							</span>
+							<div class="news-card__bottom">
+								<h class="news-card__title">Фотосессия в стенах Театра драмы</h>
+
+								<p class="news-card__description">
+									Организовывая фотосессию для локального бренда одежды мы смогли воплотить
+									все
+									пожелания заказчика и у нас получилась отличная работа. Смотрите как это
+									было
+								</p>
+							</div>
+						</div>
+						<svg class="news-card__button" width="92" height="62">
+							<use xlink:href="assets/icons/symbols.svg#link"></use>
+						</svg>
+					</div>
+				</a>
+			</article>
+			<hr>
+			<article class="news-card listing__news-card">
+				<a href="#" class="news-card__link">
+					<picture class="news-card__picture">
+						<img src="assets/images/newspic_2.jpg" alt="фотосессия" class="news-card__img" />
+					</picture>
+					<div class="news-card_div">
+						<div class="news-card_textdiv">
+							<span class="news-card__date">
+								05.11.2022
+							</span>
+							<div class="news-card__bottom">
+								<h class="news-card__title">Выставка VR в Томске</h>
+
+								<p class="news-card__description">
+									Клуб виртуальной реальности - это другие миры, яркие эмоции, новый опыт.
+									... Мы предоставляем нашим клиентам лучший игровой VR-опыт в Томске.
+								</p>
+							</div>
+						</div>
+						<svg class="news-card__button" width="92" height="62">
+							<use xlink:href="assets/icons/symbols.svg#link"></use>
+						</svg>
+					</div>
+				</a>
+			</article>
+			<hr>
+			<article class="news-card listing__news-card">
+				<a href="#" class="news-card__link">
+					<picture class="news-card__picture">
+						<img src="assets/images/newspic_3.jpg" alt="фотосессия" class="news-card__img" />
+					</picture>
+					<div class="news-card_div">
+						<div class="news-card_textdiv">
+							<span class="news-card__date">
+								01.11.2022
+							</span>
+							<div class="news-card__bottom">
+								<h class="news-card__title">Rocking radio в заброшенном ангаре</h>
+
+								<p class="news-card__description">
+									15 электрогенераторов, километры проводов и пару тонн света.
+									Все это для того, чтобы организовать лучшую вечеринку года
+									для ребят из Новосибирска.
+								</p>
+							</div>
+						</div>
+						<svg class="news-card__button" width="92" height="62">
+							<use xlink:href="assets/icons/symbols.svg#link"></use>
+						</svg>
+					</div>
+				</a>
+			</article>
 
 			<section class "about">
 				<div class="about__container">
@@ -45,14 +129,56 @@
 				</div>
 			</section>
 
-			@@include('blocks/grid.html')
+
+			<div class="grid">
+				<div class="grid__event">
+					<div class="grid__img">
+						<svg width="24" height="24">
+							<use xlink:href="assets/icons/symbols.svg#location"></use>
+						</svg>
+					</div>
+					<div class="grid__text">
+						<span class="grid__font">Томск, Белая 8</span>
+						<span> 2 этаж </span>
+						<span>оф.207-208</span>
+
+					</div>
+				</div>
+
+
+				<div class="grid__event">
+					<div class="grid__img">
+						<svg width="24" height="24">
+							<use xlink:href="assets/icons/symbols.svg#u_home-alt"></use>
+						</svg>
+					</div>
+					<div class="grid__text">
+						<span class="grid__font">Отдел аренды</span>
+						<span>+7 499 350 0730</span>
+						<span>hi@tagree.ru</span>
+					</div>
+				</div>
+
+
+				<div class="grid__event">
+					<div class="grid__img">
+						<svg width="24" height="24">
+							<use xlink:href="assets/icons/symbols.svg#star"></use>
+						</svg>
+					</div>
+					<div class="grid__text">
+						<span class="grid__font">Отдел мероприятий</span>
+						<span>+7 499 350 0730</span>
+						<span>hi@tagree.ru</span>
+					</div>
+				</div>
 
 			</div>
 
 
 			<div class="about__block8">
 				<picture class="about__picture map"> <!-- Karta -->
-					<img class="about__img" src="resource/карта.jpg" alt=" about__block8" />
+					<img class="about__img" src="assets/images/map.jpg" alt=" about__block8" />
 				</picture>
 			</div>
 		</section>
@@ -64,7 +190,7 @@
 		</div>
 
 	</main>
-    @@include('blocks/page-footer.html')
+	@@include('blocks/page-footer.html')
 </body>
 
 
